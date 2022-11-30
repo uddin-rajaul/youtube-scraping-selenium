@@ -62,7 +62,7 @@ if __name__ == "__main__":
     print('Success!!!')
     print('Fetching the page...')
     videos = get_videos(driver)
-    # print(f"found {len(videos)} videos")
+    print(f"found {len(videos)} videos")
     videos_data = [parse_video(video) for video in videos[:10]]
     print('Saving data to CSV...')
     videos_df = pd.DataFrame(videos_data)
